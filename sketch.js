@@ -25,7 +25,7 @@ function draw() {
   if(x<width/2) {
     r = random(150); //red
     g = random(100, 180); //green
-    b = random(200, 255); //blue
+    b = random(180, 255); //blue
   }
 
   //warm colored stars on right
