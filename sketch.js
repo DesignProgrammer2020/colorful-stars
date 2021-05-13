@@ -1,4 +1,4 @@
-let x, y, radius, side, r, g, b;
+let x, y, radius, r, g, b;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -14,7 +14,6 @@ function draw() {
   //make stars of random small sizes appear in random places
   x = random(0, width);
   y = random(0, height);
-  side = random(5, 10); //side for square
   radius = random(5, 10); //radius for circle
 
   //draw small pastel colored stars
@@ -36,9 +35,5 @@ function draw() {
   }
 
   fill(r, g, b);
-
-  // rectMode(CENTER);
-  ellipseMode(CENTER);
-  // square(x, y, side);
   circle(x, y, radius);
 }
